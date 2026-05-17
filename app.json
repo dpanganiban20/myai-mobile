@@ -2,6 +2,7 @@
   "expo": {
     "name": "myai",
     "slug": "myai-mobile",
+    "owner": "dolan1212",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -17,11 +18,13 @@
         "backgroundColor": "#0a0a0f"
       },
       "package": "com.myai.mobile",
+      "softwareKeyboardLayoutMode": "pan",
       "permissions": [
         "android.permission.INTERNET",
         "android.permission.READ_EXTERNAL_STORAGE",
         "android.permission.WRITE_EXTERNAL_STORAGE",
-        "android.permission.CAMERA"
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
       ]
     },
     "ios": {
@@ -33,12 +36,17 @@
       "expo-secure-store",
       [
         "expo-image-picker",
-        { "photosPermission": "myai needs access to attach images to your questions." }
+        {
+          "photosPermission": "myai needs access to attach images to your questions."
+        }
       ]
     ],
     "scheme": "myai",
     "extra": {
-      "eas": { "projectId": "your-project-id-here" }
+      "router": {},
+      "eas": {
+        "projectId": "1de13e29-f3ca-42a6-b860-a9acbd1c823a"
+      }
     }
   }
 }
