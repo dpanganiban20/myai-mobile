@@ -13,6 +13,11 @@
         "buildType": "apk"
       }
     },
+    "ios-simulator": {
+      "ios": {
+        "simulator": true
+      }
+    },
     "production": {}
   },
   "submit": {
